@@ -15,13 +15,14 @@ using System.Windows.Shapes;
 namespace WSRDemo
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для CardClient.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CardClientWindow : Window
     {
-        public Window1()
+        public CardClientWindow()
         {
             InitializeComponent();
         }
+
     }
 }
