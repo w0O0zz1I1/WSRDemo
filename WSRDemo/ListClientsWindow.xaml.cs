@@ -23,11 +23,11 @@ namespace WSRDemo
         public ListClientsWindow()
         {
             var Clinets = new List<Client>() {
-                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000"} ,
-                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000"} ,
-                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000"} ,
-                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000"} ,
-                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000"} };
+                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000", SignUpDate = DateTime.Now} ,
+                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000", SignUpDate = DateTime.Now} ,
+                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000", SignUpDate = DateTime.Now} ,
+                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000", SignUpDate = DateTime.Now} ,
+                new Client() { FirstName="Иван", LastName="Ivanov", Patronymic="Ivanovich", Phone="000000000", SignUpDate = DateTime.Now} };
             InitializeComponent();
             DgridClients.ItemsSource = Clinets;
         }

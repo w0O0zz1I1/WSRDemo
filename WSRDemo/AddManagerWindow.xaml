@@ -9,6 +9,6 @@
     <Grid Margin="0,0,0,-6">
         <TextBox HorizontalAlignment="Center" Margin="0,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" Height="28" Text="Логин" Background="White" FontSize="16" Foreground="#FFB5AEAE"/>
         <TextBox HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Пароль"  Background="White" FontSize="16" Foreground="#FFB5AEAE" VerticalAlignment="Top" Width="404" Height="28"/>
-        <Button  Content="Добавить менеджера" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="32" Margin="0,182,0,0" FontSize="16"/>
+        <Button Style="{StaticResource ButtonStyle}"  Content="Добавить менеджера" HorizontalAlignment="Center" VerticalAlignment="Top" Width="404" Height="32" Margin="0,182,0,0" FontSize="16"/>
     </Grid>
 </Window>
