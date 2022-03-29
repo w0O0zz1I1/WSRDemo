@@ -13,30 +13,36 @@ namespace WSRDemo
         {
             InitializeComponent();
 
-           /* LoginTextBox.MouseEnter += RemoveText;
-            LoginTextBox.MouseLeave += AddText;
+            Loaded += MainWindow_Loaded;
 
-            PasswordTextBox.MouseEnter += RemoveText;
-            PasswordTextBox.MouseLeave += AddText;*/
+            /* LoginTextBox.MouseEnter += RemoveText;
+             LoginTextBox.MouseLeave += AddText;
+ 
+             PasswordTextBox.MouseEnter += RemoveText;
+             PasswordTextBox.MouseLeave += AddText;*/
         }
 
-    /*    public string CurrentText { get; set; }
-
-        public void RemoveText(object sender, EventArgs e)
+        /*    public string CurrentText { get; set; }
+    
+            public void RemoveText(object sender, EventArgs e)
+            {
+                TextBox instance = (TextBox)sender;
+                CurrentText = instance.Text;
+    
+                if (instance.Text == CurrentText)
+                    instance.Text = string.Empty;
+            }
+    
+            public void AddText(object sender, EventArgs e)
+            {
+                TextBox instance = (TextBox)sender;
+                if (string.IsNullOrWhiteSpace(instance.Text))
+                    instance.Text = CurrentText;
+    
+            }*/
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            TextBox instance = (TextBox)sender;
-            CurrentText = instance.Text;
-
-            if (instance.Text == CurrentText)
-                instance.Text = string.Empty;
+            var loginPage = MainFrame.Navigate(new LoginPage());
         }
-
-        public void AddText(object sender, EventArgs e)
-        {
-            TextBox instance = (TextBox)sender;
-            if (string.IsNullOrWhiteSpace(instance.Text))
-                instance.Text = CurrentText;
-
-        }*/
     }
 }
